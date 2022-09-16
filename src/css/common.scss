@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+small,
+p {
+  color: $serious-navy;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.6px;
+}
+
+.subtext-content {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+.font-10 {
+  font-size: 10px !important;
+}
+.font-12 {
+  font-size: 12px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-20 {
+  font-size: 20px;
+}
+
+.font-weight-500 {
+  font-weight: 500 !important;
+}
+
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+
+.font-weight-700 {
+  font-weight: 700 !important;
+}
+
+.font-weight-800 {
+  font-weight: 800 !important;
+}
+
+.font-weight-900 {
+  font-weight: 900 !important;
+}
+
+.page-content {
+  margin: auto;
+  width: 1440px;
+  max-width: 100%;
+}
+
+.content-padding {
+  padding-left: 4.5%;
+  padding-right: 4.5%;
+
+  @media #{map-get($display-breakpoints, 'sm-and-down')} {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+
+.page-content-padded {
+  margin: auto;
+  width: 1440px;
+  max-width: 100%;
+  padding-left: 4.5%;
+  padding-right: 4.5%;
+
+  @media #{map-get($display-breakpoints, 'sm-and-down')} {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+
+.link {
+  &:hover,
+  &.active {
+    color: $primary !important;
+    @media #{map-get($display-breakpoints, 'md-and-up')} {
+      text-decoration: underline !important;
+      text-decoration-color: #ffb839 !important;
+      text-decoration-thickness: 2px !important;
+      text-underline-offset: 7px;
+    }
+  }
+
+  &.white--text {
+    &:hover {
+      color: $white !important;
+      text-decoration: underline !important;
+      text-decoration-color: $white !important;
+      text-decoration-thickness: 2px !important;
+      text-underline-offset: 7px;
+    }
+  }
+}
+
+.font-black {
+  color: $serious-navy;
+}
+
+.high-level-stats,
+.high-level-metrics {
+  .radial-details {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+    color: $serious-navy;
+  }
+}
+
+.apex-xaxis-tooltip {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  list-style-type: none;
+  color: #151c36;
+  b {
+    font-weight: 500;
+  }
+}
+
+.card-stats {
+  height: 145px;
+}
+
+.dashboard-cards {
+  box-shadow: 1px 2px 4px rgb(0 0 0 /0.07) !important;
+  border-radius: 8px !important;
+  border: 1px solid #f2f2f2;
+}
+
+.col-spacer {
+  padding: 6.5px !important;
+}
+
+.btn-large-default {
+  min-width: 182px !important;
+  min-height: 48px !important;
+}
+
+.btn-secondary {
+  background-color: $white !important;
+  border: 1px solid #898989 !important;
+  color: #898989 !important;
+}
+
+.btn-golden {
+  background-color: #ffb838 !important;
+}
+
+.muted-text {
+  color: $gray-dark;
+}
+
+.error--text {
+  color: $enthusiastic-pink;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.row-spacing {
+  margin-left: -6px;
+  margin-right: -6px;
+}

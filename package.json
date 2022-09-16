@@ -1,0 +1,78 @@
+{
+  "name": "m360-client-dashboard",
+  "version": "1.0.0-beta.5",
+  "private": true,
+  "productName": "M360 Client Dashboard",
+  "author": "Carl Louie Aruta <caruta@yondu.com>",
+  "contributors": [
+    "Kurt Lewin Jota <kjota@yondu.com>",
+    "Jason Matarong <jmatarong@yondu.com>",
+    "Joelrey Pareja <jpareja@yondu.com>"
+  ],
+  "scripts": {
+    "start": "vue-cli-service serve",
+    "serve": "vue-cli-service serve",
+    "serve:stg": "vue-cli-service serve --mode staging",
+    "serve:prod": "vue-cli-service serve --mode production",
+    "build": "vue-cli-service build",
+    "build:dev": "vue-cli-service build --mode development",
+    "build:stg": "vue-cli-service build --mode staging",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "version-bump:beta": "npm version prerelease --preid=beta",
+    "version-bump:alpha": "npm version prerelease --preid=alpha",
+    "version-bump:rc": "npm version prerelease --preid=rc"
+  },
+  "dependencies": {
+    "@mdi/font": "^6.7.96",
+    "apexcharts": "^3.35.4",
+    "core-js": "^3.6.5",
+    "date-fns": "^2.28.0",
+    "debug": "4.1.1",
+    "idle-vue": "^2.0.5",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.debounce": "^4.0.8",
+    "uuid": "^8.3.2",
+    "vue": "^2.6.11",
+    "vue-apexcharts": "^1.6.2",
+    "vue-fragment": "^1.5.2",
+    "vue-router": "^3.2.0",
+    "vuetify": "^2.6.0",
+    "vuex": "^3.4.0",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.15",
+    "@vue/cli-plugin-eslint": "~4.5.15",
+    "@vue/cli-plugin-router": "~4.5.15",
+    "@vue/cli-plugin-unit-jest": "~4.5.15",
+    "@vue/cli-plugin-vuex": "~4.5.15",
+    "@vue/cli-service": "^4.5.19",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "^1.0.3",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "lint-staged": "^9.5.0",
+    "prettier": "^2.2.1",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-compression": "~1.2.0",
+    "vue-cli-plugin-vuetify": "~2.5.0",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.7.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint --fix",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
