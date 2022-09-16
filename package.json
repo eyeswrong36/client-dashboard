@@ -3,11 +3,9 @@
   "version": "1.0.0-beta.5",
   "private": true,
   "productName": "M360 Client Dashboard",
-  "author": "Carl Louie Aruta <caruta@yondu.com>",
+  "author": "Jason Matarong",
   "contributors": [
-    "Kurt Lewin Jota <kjota@yondu.com>",
-    "Jason Matarong <jmatarong@yondu.com>",
-    "Joelrey Pareja <jpareja@yondu.com>"
+    ""
   ],
   "scripts": {
     "start": "vue-cli-service serve",
